@@ -6,14 +6,14 @@ import datetime
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup, ForceReply
 from telegram.ext import Application, CommandHandler, CallbackQueryHandler, MessageHandler, filters, ContextTypes
 
-if sys.platform >= 'win32':
-    asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
+#if sys.platform >= 'win32':
+   # asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
 
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 
 # 📢 আপনার ফিক্সড টোকেন এবং গিটহাবের মেইন ডিরেক্টরি লিঙ্ক
 BOT_TOKEN = "8228636752:AAEt3UYclWpmZPLvBvFQpXvFyptDJE-kV2A"
-BASE_URL = "https://github.io"
+BASE_URL = "https://work-for-recharge.github.io/video/"
 
 def init_db():
     conn = sqlite3.connect('users.db')
